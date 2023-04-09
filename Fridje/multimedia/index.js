@@ -33,3 +33,72 @@ function doClockTick(){
     }
     
 }
+// temperature
+
+let temperature=document.getElementById("temperature-screen");
+temperature.addEventListener("onload",generate());
+
+let up=document.getElementById("up");
+up.addEventListener("click", increase)
+
+let down=document.getElementById("down");
+down.addEventListener("click",decrease)
+
+let change=document.getElementById("change");
+change.addEventListener("click",changetemp)
+
+function increase(){
+    let temp=parseInt(temperature.textContent);
+    if(change.textContent=="C"){
+        if(temp<100){
+            temp=Math.floor(temp+1);
+            temperature.innerHTML=" "+ temp+" C";
+        }
+    }
+    else{
+        if(temp<212){
+            temp=Math.floor(temp+1);
+            temperature.innerHTML=" "+ temp+" F";
+        }
+    }
+    
+}
+
+function decrease(){
+    let temp=parseInt(temperature.textContent);
+    if(change.textContent=="C"){
+        if(temp>0){
+            temp=Math.floor(temp-1);
+            temperature.innerHTML=" "+ temp+" C";
+        }
+    }
+    else{
+        if(temp>32){
+            temp=Math.floor(temp-1);
+            temperature.innerHTML=" "+ temp+" F";
+        }
+    }
+    
+
+}
+
+function generate(){
+    let tempe=30
+    temperature.innerHTML=""+tempe +" C";
+    }
+function changetemp(){
+    if(change.textContent=="C"){
+        let temp=parseInt(temperature.textContent);
+        change.innerHTML="F";
+        temp=Math.floor((temp*9)/5+32);
+        temperature.innerHTML=" "+temp+" F";
+    }
+else{
+    let temp=parseInt(temperature.textContent);
+        change.innerHTML="C";
+        temp=Math.floor(((temp-32)*5)/9);
+        temperature.innerHTML=" "+temp+" C";
+}
+}
+
+

@@ -101,4 +101,71 @@ else{
 }
 }
 
+//screen
+
+// web
+let internet=document.getElementById("web");
+internet.addEventListener("click",updateweb);
+
+function updateweb(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./multimedia/gogle.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+// video
+let power=document.getElementById("power");
+power.addEventListener("click",updateTV);
+
+function updateTV(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./multimedia/gym_class_heroes_stereo_hearts_ft._adam_levine_official_video_h264_37062.mp4"
+
+    const video= document.createElement("video");
+    video.src=url;
+    video.controls=true;
+    video.muted=false;
+    video.height=100;
+    video.width=350;
+    screen.appendChild(video);
+}
+
+// music
+
+let music=document.getElementById("music");
+music.addEventListener("click", updateImage)
+music.addEventListener("click", updateAudio)
+music.addEventListener("click", stopAudio)
+
+function updateImage(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./multimedia/music.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+
+function updateAudio(){    
+    const beat= new Audio("./multimedia/Alikiba-Ndombolo-AFROHITS.NET_.mp3");
+    beat.play();
+}
+
+
+
 

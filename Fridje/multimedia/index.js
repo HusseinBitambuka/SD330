@@ -146,7 +146,6 @@ function updateTV(){
 let music=document.getElementById("music");
 music.addEventListener("click", updateImage)
 music.addEventListener("click", updateAudio)
-music.addEventListener("click", stopAudio)
 
 function updateImage(){
     let screen=document.getElementById("screen");
@@ -164,6 +163,51 @@ function updateImage(){
 function updateAudio(){    
     const beat= new Audio("./multimedia/Alikiba-Ndombolo-AFROHITS.NET_.mp3");
     beat.play();
+}
+
+// weather
+let weather=document.getElementById("weather");
+weather.addEventListener("click",Weatherupdate)
+
+function Weatherupdate(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./multimedia/weather.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+ // open the fidge
+ let inside=document.getElementById("inside");
+ inside.addEventListener("click",openfridge)
+
+ function openfridge(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./multimedia/inside-fridge.jpg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+let close=document.getElementById("close");
+close.addEventListener("click",defaultSetting);
+
+function defaultSetting(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+     screen.style.backgroundColor="grey";
 }
 
 

@@ -209,6 +209,19 @@ function defaultSetting(){
      }
      screen.style.backgroundColor="grey";
 }
+// shoping list
+let submit=document.getElementById("submit");
+submit.addEventListener("click",uploadList);
+
+function uploadList(){
+    alert(" I am clickable")
+    let ol=document.getElementById("order");
+    let item=documet.getElementById("item").value;
+    let li=document.createElement("li");
+    li.innerHTML=item;
+    ol.appendChild(li);
+
+}
 
 
 

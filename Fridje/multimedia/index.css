@@ -184,5 +184,13 @@ border: 7px solid black;}
     width: 50;
     border: 2px solid red; 
 }
+#submit{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;  
+}
 
 

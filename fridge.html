@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta author="Hussein Bitambuka">
+        <style>
+            body{background-color: darkkhaki;}
+
+h1{font-family: Arial,Helvetica, sans-serif;
+    font-size: larger;font-style: italic; 
+    color: darkgreen;text-align: center;
+    text-decoration-line: underline;}
+
+#fridge{height: 690px;
+    width: 600px;
+    margin-left: 100px;
+     margin-top: 10px;
+      border: 15px solid black;}
+
+#first{
+    height: 500px;
+border: 7px solid black;}
+
+#second{
+    margin-top: 5px;
+    border: 7px solid black;
+}
+#screen{
+    margin-top:7px;
+    margin-bottom:100px;
+    margin-left: 100px;
+    float: left;
+    height: 100px;
+    width: 350px;
+    border: 10px solid black;
+    background-color: gray;
+}
+#stuf{
+    
+    float: left;
+    display: grid;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "......";
+    height: 70px;
+}
+#logo-symbol{
+    margin-left: 20px;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    background-color: black;
+}
+#watch{
+    color: deepskyblue;
+    margin-top: 10px;
+    padding: 5px;
+    height: 50px;
+    width: 70px;
+    border: 2px solid red;
+    background-color: black;
+}
+#alarm{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 50px;
+    border: 2px solid red;
+    background-color: black;
+}
+#setup{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#setdown{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#format{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#temperature-screen{
+    color: deepskyblue;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 50px;
+    border: 2px solid red;
+    background-color: black;
+}
+#up{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#down{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#change{
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    background-color: black;
+}
+#buttons{
+    display: grid;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: right;
+}
+#power{
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;
+}
+#web{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;
+}
+#music{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;
+}
+#weather{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;
+}
+#inside{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;  
+}
+#close{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red; 
+}
+#submit{
+    margin-top: 2px;
+    color: greenyellow;
+    background-color: black;
+    height: 20;
+    width: 50;
+    border: 2px solid red;  
+}
+
+
+
+        </style>
+        <title>fridge application</title>
+    </head>
+    <body>
+        <h1>Hussein's fridge</h1>
+        <div id="fridge">
+            <div id="first">
+                <div id="stuff">
+                    <div id="logo">
+                        <dv id="logo-symbol"> Cool up!</dv>
+                        <div id="logo-tet"> logo </div>
+                    </div>
+
+                    <div id="time">
+                        <dv id="watch"></dv>
+                        <button id="format">12h</button>
+                        <div>Alarm</div>
+                        <div id="alarm">00:00</div>
+                        <button id="setup">+</button>
+                        <button id="setdown">-</button>
+                    </div>
+
+                    <div id="temperature">
+                        <div id="temperature-screen"></div>
+                        <button id="up">+</button>
+                        <button id="down">-</button>
+                        <button id="change">C</button>
+                    </div>
+                </div>
+                <div id="screen"></div>
+                <div id="buttons">
+                    <button id="power"> Power</button>
+                    <button id="web">Internet</button>
+                    <button id="music">Music</button>
+                    <button id="weather">weather</button>
+                    <button id="inside">open</button>
+                    <button id="close">close</button>
+                </div>
+            </div>
+            <div id="second">
+                <div id="list">
+                    <ol id="order">
+                        <li>Shoes</li>
+                        <li>Ice cream</li>
+                    </ol>
+                </div>
+                    Add here
+                    <input type="text" id="item"  value="item">
+                  <button id="submit"> add</button>
+            </div>
+            
+            
+               
+        </div>
+    </body>
+    <script>
+        // add the clock event
+let time=document.getElementById("time");
+time.addEventListener("onload",doStartClock());
+let format=document.getElementById("format");
+format.addEventListener("click",changeformat())
+function changeformat(){
+        format.addEventListener("click",()=>{
+            if(format.textContent=="12h"){
+                format.innerHTML="24h";}
+            else{
+                    format.innerHTML="12h";
+                }
+        })
+}
+
+function doStartClock(){
+    setInterval(doClockTick,1000)
+}
+function doClockTick(){
+    let currentDate=new Date();
+    let hours=currentDate.getHours();
+    let hours12format=hours%12;
+    let minutes=currentDate.getMinutes();
+    let seconds=currentDate.getSeconds();
+    let watch=document.getElementById("watch");
+    if(format.textContent=="24h"){
+        let time=hours+" : "+minutes+" : "+seconds;
+        watch.textContent=time;
+    }
+    else{
+        let time=hours12format+" : "+minutes+" : "+seconds;
+        watch.textContent=time;
+    }
+    
+}
+// temperature
+
+let temperature=document.getElementById("temperature-screen");
+temperature.addEventListener("onload",generate());
+
+let up=document.getElementById("up");
+up.addEventListener("click", increase)
+
+let down=document.getElementById("down");
+down.addEventListener("click",decrease)
+
+let change=document.getElementById("change");
+change.addEventListener("click",changetemp)
+
+function increase(){
+    let temp=parseInt(temperature.textContent);
+    if(change.textContent=="C"){
+        if(temp<100){
+            temp=Math.floor(temp+1);
+            temperature.innerHTML=" "+ temp+" C";
+        }
+    }
+    else{
+        if(temp<212){
+            temp=Math.floor(temp+1);
+            temperature.innerHTML=" "+ temp+" F";
+        }
+    }
+    
+}
+
+function decrease(){
+    let temp=parseInt(temperatuire.textContent);
+    if(change.textContent=="C"){
+        if(temp>0){
+            temp=Math.floor(temp-1);
+            temperature.innerHTML=" "+ temp+" C";
+        }
+    }
+    else{
+        if(temp>32){
+            temp=Math.floor(temp-1);
+            temperature.innerHTML=" "+ temp+" F";
+        }
+    }
+    
+
+}
+
+function generate(){
+    let tempe=30
+    temperature.innerHTML=""+tempe +" C";
+    }
+function changetemp(){
+    if(change.textContent=="C"){
+        let temp=parseInt(temperature.textContent);
+        change.innerHTML="F";
+        temp=Math.floor((temp*9)/5+32);
+        temperature.innerHTML=" "+temp+" F";
+    }
+else{
+    let temp=parseInt(temperature.textContent);
+        change.innerHTML="C";
+        temp=Math.floor(((temp-32)*5)/9);
+        temperature.innerHTML=" "+temp+" C";
+}
+}
+
+//screen
+
+// web
+let internet=document.getElementById("web");
+internet.addEventListener("click",updateweb);
+
+function updateweb(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="gogle.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+// video
+let power=document.getElementById("power");
+power.addEventListener("click",updateTV);
+
+function updateTV(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="./gym_class_heroes_stereo_hearts_ft._adam_levine_official_video_h264_37062.mp4"
+
+    const video= document.createElement("video");
+    video.src=url;
+    video.controls=true;
+    video.muted=false;
+    video.height=100;
+    video.width=350;
+    screen.appendChild(video);
+}
+
+// music
+
+let music=document.getElementById("music");
+music.addEventListener("click", updateImage)
+music.addEventListener("click", updateAudio)
+
+function updateImage(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="music.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+
+function updateAudio(){    
+    const beat= new Audio("Alikiba-Ndombolo-AFROHITS.NET_.mp3");
+    beat.play();
+}
+
+// weather
+let weather=document.getElementById("weather");
+weather.addEventListener("click",Weatherupdate)
+
+function Weatherupdate(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="weather.jpeg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+ // open the fidge
+ let inside=document.getElementById("inside");
+ inside.addEventListener("click",openfridge)
+
+ function openfridge(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+    let url="inside-fridge.jpg"
+    const img= new Image(350,100); // width, height
+    img.src=url;
+    screen.appendChild(img);
+}
+let close=document.getElementById("close");
+close.addEventListener("click",defaultSetting);
+
+function defaultSetting(){
+    let screen=document.getElementById("screen");
+    let child=screen.lastChild;
+    while (child){
+        screen.removeChild(child);
+        child=screen.lastChild;
+     }
+     screen.style.backgroundColor="grey";
+}
+// shoping list
+let submit=document.getElementById("submit");
+submit.addEventListener("click",uploadList);
+
+function uploadList(){
+    let ol=document.getElementById("order");
+    let item=document.getElementById("item").value;
+    let li=document.createElement("li");
+    li.innerHTML=item;
+    ol.appendChild(li);
+
+}
+
+
+
+
+
+    </script>
+</html>

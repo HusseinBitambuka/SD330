@@ -4,6 +4,8 @@
         <style>
             body{background: darkkhaki;}
             h1{text-decoration: underline;}
+            .avatar{float: right;}
+            
 
         </style>
         <meta charset="utf-8">
@@ -14,6 +16,9 @@
         <h1>Hussein's file list</h1>
         <header>This file provides the links to my system design files</header>
         <hr>
+        <div class="avatar">
+            <img src="_058.JPG" width="200" height="150">
+        </div>
 
         <div id="files"></div>
         <hr>
@@ -41,7 +46,10 @@
            
                htmlString += '</ul></div>';
                document.getElementById('files').innerHTML = htmlString;
-           })()
-       }	
+
+
+               
+           })()	
+       }
        </script>
 </html>

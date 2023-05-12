@@ -5,6 +5,7 @@ fetch("books.json")
   .then(data => {
     data.books.forEach(book => {
       const classItem = document.createElement("li");
+      classItem.setAttribute('id','class-name')
       const classLink = document.createElement("a");
       classLink.textContent = book.class;
       classLink.addEventListener("click", () => {

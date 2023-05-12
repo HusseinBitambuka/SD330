@@ -1,0 +1,20 @@
+{
+    "books": [
+      {
+        "title": "Interactive Design",
+        "class": "CMPT_330L",
+        "professor": "Andrew Tokash"
+      },
+      {
+        "title": "Introduction to Algorithms 3rd Edition",
+        "class": "DATA_300L",
+        "professor": "Matthew A. Johnson"
+      },
+      {
+        "title": "Introduction to Java Programming and Data Structures",
+        "class": "CMPT_201L",
+        "professor": "Juan Arias"
+      }
+    ]
+  }
+  
